@@ -22,6 +22,8 @@ jobs:
         env:
             ENABLE_PREVIEW_FEATURES: true
             GITHUB_TOKEN: ${{secrets.canaryVal}}
+            NEXT_PUBLIC_CLERK_FRONTEND_API: clerk.lasting.prawn-61.lcl.dev
+            CLERK_API_KEY: test_En4KaYJVfGEOicLT0SZYyZ59trEevSua4F
         id: builddeploy
         uses: vivekjilla/staticstiesactionoryx@latest
         with:
